@@ -1,6 +1,6 @@
-# eosstore-backup
+# fibos-backup
 
-Fibos mainnet data backup
+> Fibos mainnet data backup
 
 In order to ensure the security of the mainnet, we made regular backup of the data.We backup data once a day,and include blocks and state.
 

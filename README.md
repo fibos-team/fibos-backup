@@ -1,9 +1,11 @@
 # eosstore-backup
-mainnet data backup
+
+Fibos mainnet data backup
 
 In order to ensure the security of the mainnet, we made regular backup of the data.We backup data once a day,and include blocks and state.
 
-We can get the data from [EOSSTORE-backup-address](https://s3-ap-northeast-1.amazonaws.com/eosstorebest/index.html)
+We can get the data from [fibos-backup-address](http://fibos.team/)
+
 os:Ubuntu16.04
 
 The snapshot only be used to compile version and Ubuntu
@@ -11,6 +13,7 @@ The snapshot only be used to compile version and Ubuntu
 Put the data at your bp's data-dir
 
 1.Get latest data with 
+
 ```
 wget https://s3-ap-northeast-1.amazonaws.com/eosstorebp/xxx.tar.gz
 ```
@@ -21,15 +24,16 @@ wget https://s3-ap-northeast-1.amazonaws.com/eosstorebp/xxx.tar.gz
 tar -zxvf xxx.tar.gz
 ```
 
-3.we can see two folder.
+3.we can see one folder called **liuqiangdong_SYNC_Dir** (liuqiangdong is the BP name of FIBOSTEAM)
+
 ```
-root@eos-test-01:/data/eos-data# ll
-total 20
-drwxr-xr-x 5 1001 1001 4096 Jul  2 09:59 ./
-drwxr-xr-x 4 root root 4096 Jul  2 10:08 ../
-drwxrwxr-x 3 1001 1001 4096 Jun 25 13:57 blocks/
-drwxrwxr-x 2 1001 1001 4096 Jul  2 10:08 state/
-root@eos-test-01:/data/eos-data# ls
+ubuntu@liuqiangdong:~/workspace/fibos-team/liuqiangdong_Dir$ ll
+total 32
+drwxrwxrwx 4 liuqiangdong liuqiangdong  4096 Sep 11 03:19 ./
+drwxrwxr-x 7 liuqiangdong liuqiangdong  4096 Sep 12 22:25 ../
+drwxrwxrwx 3 liuqiangdong liuqiangdong  4096 Sep 11 03:19 blocks/
+-rw-rw-rw- 1 liuqiangdong liuqiangdong 13868 Sep 11 03:19 config.ini
+drwxrwxrwx 2 liuqiangdong liuqiangdong  4096 Sep 12 22:24 state/
 ```
 
-4.start your nodeos
+4.start your fibos bp node

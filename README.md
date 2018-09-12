@@ -12,28 +12,29 @@ The snapshot only be used to compile version and Ubuntu
 
 Put the data in your bp's data-dir
 
-1.get latest data with 
+1. get latest data with 
 
-```
-wget https://s3-ap-northeast-1.amazonaws.com/fibos/xxx.tar.gz
-```
+  ```
+  wget https://s3-ap-northeast-1.amazonaws.com/fibos/xxx.tar.gz
+  ```
 
-2.then tar the xxx.tar.gz
+2. then tar the xxx.tar.gz
 
-```
-tar -zxvf xxx.tar.gz
-```
+  ```
+  tar -zxvf xxx.tar.gz
+  ```
 
-3.we can see one folder called **liuqiangdong_SYNC_Dir** (liuqiangdong is the BP name of FIBOSTEAM)
+3. we can see one folder called **liuqiangdong_SYNC_Dir** (liuqiangdong is the BP name of FIBOSTEAM)
 
-```
-ubuntu@liuqiangdong:~/workspace/fibos-team/liuqiangdong_Dir$ ll
-total 32
-drwxrwxrwx 4 liuqiangdong liuqiangdong  4096 Sep 11 03:19 ./
-drwxrwxr-x 7 liuqiangdong liuqiangdong  4096 Sep 12 22:25 ../
-drwxrwxrwx 3 liuqiangdong liuqiangdong  4096 Sep 11 03:19 blocks/
--rw-rw-rw- 1 liuqiangdong liuqiangdong 13868 Sep 11 03:19 config.ini
-drwxrwxrwx 2 liuqiangdong liuqiangdong  4096 Sep 12 22:24 state/
-```
+  ```
+  ubuntu@liuqiangdong:~/workspace/fibos-team/liuqiangdong_Dir$ ll
+  total 32
+  drwxrwxrwx 4 liuqiangdong liuqiangdong  4096 Sep 11 03:19 ./
+  drwxrwxr-x 7 liuqiangdong liuqiangdong  4096 Sep 12 22:25 ../
+  drwxrwxrwx 3 liuqiangdong liuqiangdong  4096 Sep 11 03:19 blocks/
+  -rw-rw-rw- 1 liuqiangdong liuqiangdong 13868 Sep 11 03:19 config.ini
+  drwxrwxrwx 2 liuqiangdong liuqiangdong  4096 Sep 12 22:24 state/
+  ```
 
-4.start your fibos bp node
+4. start your fibos bp node
+ 
